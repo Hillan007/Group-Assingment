@@ -15,7 +15,7 @@ This project involves designing and implementing a **MySQL database** for a **bo
 - Set up **user roles** for security.
 - Query data efficiently for insights.
 
-## 📖 Tables Included
+##  Tables Included
 The database contains the following key tables:
 - **book** - Stores book details.
 - **book_author** - Manages book-author relationships.
@@ -36,5 +36,5 @@ The database contains the following key tables:
 ##  Installation & Setup
 ### **Step 1: Clone the Repository**
 ```sh
-git clone 
+git clone https://github.com/Hillan007/Group-Assingment/blob/main/create%20db
 cd bookstore-database
