@@ -151,3 +151,21 @@ INSERT INTO author (name) VALUES ('J.D. Salinger'), ('Harper Lee'), ('Gabriel Ga
 INSERT INTO book_author (book_id, author_id) VALUES (1, 1), (2, 2), (3, 3);
 
 INSERT INTO customer (name, email) VALUES ('John Doe', 'john@example.com'), ('Jane Smith', 'jane@example.com');
+
+-- step 11.
+INSERT INTO order_status (status_name) 
+VALUES ('Pending'), ('Shipped'), ('Delivered'), ('Cancelled');
+
+-- step 12
+INSERT INTO order_history (order_id, status_id, update_timestamp) 
+VALUES (1, 2, NOW()), -- Order #1 is now 'Shipped'
+       (2, 3, NOW()); -- Order #2 is now 'Delivered'
+
+-- step 13 Retrieve Order Shipment Status
+SELECT cust_order.order_id, customer.name, order_status.status_name, order_history.update_timestamp
+FROM cust_order
+JOIN order_history ON cust_order.order_id = order_history.order_id
+JOIN order_status ON order_history.status_id = order_status.status_id
+JOIN customer ON cust_order.customer_id = customer.customer_id;
+
+
