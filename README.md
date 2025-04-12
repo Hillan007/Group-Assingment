@@ -1,14 +1,14 @@
 # Bookstore Database Project
 
-##  Project Overview
+##  Project Overview as Explained
 This project involves designing and implementing a **MySQL database** for a **bookstore**. The database efficiently stores and manages details about books, authors, customers, orders, and shipping. By completing this project, you'll gain hands-on experience in **database design, SQL programming, and security best practices**.
 
-##  Tools and Technologies
+##  Tools and Technologies used.
 - **MySQL** - For database creation and management.
 - **Draw.io** - For visualizing database schema and relationships.
 - **Git & GitHub** - For version control.
 
-## Objectives
+## Objectives accomplished in the project
 - Design a **relational database** to store bookstore operations data.
 - Create tables with **optimized schema and data types**.
 - Implement **foreign keys** and relationships.
