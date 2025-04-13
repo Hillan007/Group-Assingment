@@ -32,11 +32,13 @@ The database contains the following key tables:
 - **shipping_method** - Lists shipping options.
 - **order_history** - Logs order updates.
 - **order_status** - Lists possible order statuses.
+  
 
 ## Contributors
-- **Victor Hillan Muthomi**
-- **Isaac Kahura**
-- **Bakhita Mumbi**
+--Everyone did the assingment on their own before comparing results at the end to finalize a repository for the group.
+- **Victor Hillan Muthomi**--Handled part of the SQL code
+- **Isaac Kahura**--handled the ERD diagram to visualize the relationships between tables
+- **Bakhita Mumbi**--handled part of the SQL code.
 
 ## Installation & Setup
 ### **Step 1: Clone the Repository**
