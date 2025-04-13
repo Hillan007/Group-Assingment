@@ -1,21 +1,21 @@
 # Bookstore Database Project
 
-##  Project Overview as Explained
+## Project Overview as Explained
 This project involves designing and implementing a **MySQL database** for a **bookstore**. The database efficiently stores and manages details about books, authors, customers, orders, and shipping. By completing this project, you'll gain hands-on experience in **database design, SQL programming, and security best practices**.
 
-##  Tools and Technologies used.
+## Tools and Technologies used
 - **MySQL** - For database creation and management.
 - **Draw.io** - For visualizing database schema and relationships.
 - **Git & GitHub** - For version control.
 
-## Objectives accomplished in the project
+## Objectives Accomplished in the Project
 - Design a **relational database** to store bookstore operations data.
 - Create tables with **optimized schema and data types**.
 - Implement **foreign keys** and relationships.
 - Set up **user roles** for security.
 - Query data efficiently for insights.
 
-##  Tables Included
+## Tables Included
 The database contains the following key tables:
 - **book** - Stores book details.
 - **book_author** - Manages book-author relationships.
@@ -33,7 +33,12 @@ The database contains the following key tables:
 - **order_history** - Logs order updates.
 - **order_status** - Lists possible order statuses.
 
-##  Installation & Setup
+## Contributors
+- **Victor Hillan Muthomi**
+- **Isaac Kahura**
+- **Bakhita Mumbi**
+
+## Installation & Setup
 ### **Step 1: Clone the Repository**
 ```sh
 git clone https://github.com/Hillan007/Group-Assingment/blob/main/create%20db
