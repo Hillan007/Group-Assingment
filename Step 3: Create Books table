@@ -1,0 +1,12 @@
+-- Step 3: Create Books table (Includes foreign keys for publisher and language)
+  
+CREATE TABLE book (
+    book_id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    isbn VARCHAR(20) UNIQUE NOT NULL,
+    publication_year YEAR,
+    publisher_id INT,
+    language_id INT,
+    FOREIGN KEY (publisher_id) REFERENCES publisher(publisher_id),
+    FOREIGN KEY (language_id) REFERENCES book_language(language_id)
+);
