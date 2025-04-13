@@ -1,0 +1,32 @@
+-- Step 7: Create Address-related tables
+  
+CREATE TABLE country (
+    country_id INT PRIMARY KEY AUTO_INCREMENT,
+    country_name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE address_status (
+    status_id INT PRIMARY KEY AUTO_INCREMENT,
+    status_name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE address (
+    address_id INT PRIMARY KEY AUTO_INCREMENT,
+    street VARCHAR(255) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    country_id INT,
+    FOREIGN KEY (country_id) REFERENCES country(country_id)
+);
+
+CREATE TABLE customer_address (
+    customer_id INT,
+    address_id INT,
+    status_id INT,
+    PRIMARY KEY (customer_id, address_id),
+    FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
+    FOREIGN KEY (address_id) REFERENCES address(address_id),
+    FOREIGN KEY (status_id) REFERENCES address_status(status_id)
+  
+);
+  
+

@@ -1,0 +1,8 @@
+-- Step 9: Set Up User Roles and Permissions
+  
+CREATE USER 'admin_user'@'localhost' IDENTIFIED BY 'securepassword';
+GRANT ALL PRIVILEGES ON bookstore.* TO 'admin_user'@'localhost';
+
+CREATE USER 'report_user'@'localhost' IDENTIFIED BY 'readonlypassword';
+GRANT SELECT ON bookstore.* TO 'report_user'@'localhost';
+

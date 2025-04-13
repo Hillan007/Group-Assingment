@@ -1,0 +1,15 @@
+-- Step 10: Insert Sample Data (Books, Authors, Customers)
+  
+INSERT INTO publisher (name) VALUES ('Penguin Random House'), ('HarperCollins'), ('Simon & Schuster');
+INSERT INTO book_language (language_name) VALUES ('English'), ('French'), ('Spanish');
+
+INSERT INTO book (title, isbn, publication_year, publisher_id, language_id) 
+VALUES ('The Catcher in the Rye', '9780316769488', 1951, 1, 1), 
+       ('To Kill a Mockingbird', '9780061120084', 1960, 2, 1), 
+       ('One Hundred Years of Solitude', '9780060883287', 1967, 2, 3);
+
+INSERT INTO author (name) VALUES ('J.D. Salinger'), ('Harper Lee'), ('Gabriel García Márquez');
+INSERT INTO book_author (book_id, author_id) VALUES (1, 1), (2, 2), (3, 3);
+
+INSERT INTO customer (name, email) VALUES ('John Doe', 'john@example.com'), ('Jane Smith', 'jane@example.com');
+

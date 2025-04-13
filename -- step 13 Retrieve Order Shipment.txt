@@ -1,0 +1,6 @@
+-- step 13 Retrieve Order Shipment Status
+SELECT cust_order.order_id, customer.name, order_status.status_name, order_history.update_timestamp
+FROM cust_order
+JOIN order_history ON cust_order.order_id = order_history.order_id
+JOIN order_status ON order_history.status_id = order_status.status_id
+JOIN customer ON cust_order.customer_id = customer.customer_id;

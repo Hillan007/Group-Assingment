@@ -1,0 +1,10 @@
+-- Step 5: Create Book-Author junction table (Many-to-Many Relationship)
+  
+CREATE TABLE book_author (
+    book_id INT,
+    author_id INT,
+    PRIMARY KEY (book_id, author_id),
+    FOREIGN KEY (book_id) REFERENCES book(book_id),
+    FOREIGN KEY (author_id) REFERENCES author(author_id)
+);
+
